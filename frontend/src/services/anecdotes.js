@@ -1,6 +1,9 @@
 import axios from 'axios'
 
-const url = 'http://localhost:3001/anecdotes'
+//const url = 'http://localhost:3001/anecdotes'
+//const url = process.env.BACKEND_URL
+const BACKEND_URL='http://localhost:3001/anecdotes'
+const url = BACKEND_URL
 
 const getAll = async () => {
   const resp = await axios.get(url)
